@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: app-config
+  namespace: devops-app
+data:
+  PORT: "3000"
+  NODE_ENV: "production"
+  DB_HOST: "postgres-service"
+  DB_PORT: "5432"
+  DB_NAME: "devops_db"
+  DB_USER: "admin"
+  REDIS_HOST: "redis-service"
+  REDIS_PORT: "6379"
