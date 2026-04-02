@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: app-config
+  namespace: {{ .Values.namespace }}
+data:
+  PORT: "{{ .Values.api.port }}"
+  NODE_ENV: "{{ .Values.environment }}"
+  DB_HOST: "postgres-service"
+  DB_PORT: "{{ .Values.postgres.port }}"
+  DB_NAME: "{{ .Values.postgres.database }}"
+  DB_USER: "{{ .Values.postgres.username }}"
+  REDIS_HOST: "redis-service"
+  REDIS_PORT: "{{ .Values.redis.port }}"

@@ -1,0 +1,8 @@
+api:
+  replicas: 3
+  tag: latest
+
+environment: production
+
+postgres:
+  password: superSecureProdPassword!

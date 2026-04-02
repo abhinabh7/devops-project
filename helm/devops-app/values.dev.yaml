@@ -1,0 +1,8 @@
+api:
+  replicas: 1
+  tag: latest
+
+environment: development
+
+postgres:
+  password: devpassword123
